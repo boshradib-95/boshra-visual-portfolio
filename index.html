@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>Boshra Dib — Visual Stories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#ffd700;--white:#f7f7f5;--muted:#a5a5a5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080808;color:var(--white);font-family:"DM Sans",sans-serif}
+a{color:inherit;text-decoration:none}
+nav{position:absolute;z-index:5;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:28px 6%}
+.logo{font-weight:800;letter-spacing:.08em}
+.logo span,.gold{color:var(--gold)}
+.links{display:flex;gap:32px;font-size:12px;letter-spacing:.15em}
+.links a:hover{color:var(--gold)}
+.hero{min-height:100svh;position:relative;display:flex;align-items:end;overflow:hidden;padding:130px 6% 9%}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(0deg,#080808 1%,transparent 80%),linear-gradient(90deg,rgba(0,0,0,.7),transparent),url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-content{position:relative;z-index:1}
+.eyebrow{font-size:11px;letter-spacing:.3em;color:var(--gold);font-weight:700;text-transform:uppercase}
+h1,h2,h3,p{margin-top:0}
+h1{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(55px,10vw,160px);line-height:.88;letter-spacing:-.085em;margin:24px 0}
+.hero p{color:#dedede;max-width:540px;line-height:1.7}
+.button{display:inline-block;margin-top:24px;border:1px solid var(--gold);padding:15px 24px;font-size:12px;letter-spacing:.14em;transition:.3s}
+.button:hover{background:var(--gold);color:#000}
+section{padding:110px 6%}
+.section-top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:45px}
+h2{font-family:Manrope,sans-serif;font-size:clamp(36px,6vw,80px);letter-spacing:-.07em;line-height:1}
+.small{font-size:12px;color:var(--muted);line-height:1.8}
+.work-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+.project{position:relative;overflow:hidden;background:#171717;min-height:360px}
+.project:first-child{grid-row:span 2;min-height:680px}
+.project img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.65);transition:transform .8s,filter .6s}
+.project:hover img{transform:scale(1.06);filter:brightness(.85)}
+.project:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.85))}
+.project-info{position:absolute;z-index:1;bottom:28px;left:28px;right:28px}
+.project h3{font-size:clamp(23px,3vw,43px);letter-spacing:-.05em;margin:10px 0}
+.project .arrow{float:right;color:var(--gold);font-size:28px}
+.about{background:#111;display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.about p{color:#bbb;line-height:1.9;max-width:570px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.tags span{border:1px solid #414141;border-radius:30px;padding:10px 15px;font-size:11px}
+.contact{text-align:center;padding:140px 6%}
+.contact h2{font-size:clamp(48px,9vw,125px)}
+footer{border-top:1px solid #262626;padding:30px 6%;display:flex;justify-content:space-between;gap:15px;color:#888;font-size:12px}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:750px){
+nav{padding:24px 6%}.links{gap:15px;font-size:10px}
+.hero{min-height:90svh}.hero p{font-size:14px}
+section{padding:75px 6%}
+.work-grid,.about{grid-template-columns:1fr}
+.project,.project:first-child{min-height:400px;grid-row:auto}
+.section-top{align-items:start;flex-direction:column}
+footer{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#" class="logo">BOSHRA DIB<span>.</span></a>
+<div class="links">
+<a href="#work">WORK</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<div class="eyebrow">Photography · Film · Sports</div>
+<h1>BEYOND<br>THE <span class="gold">FRAME.</span></h1>
+<p>Capturing energy, emotion and the stories behind every moment. An independent visual creator based in Berlin.</p>
+<a class="button" href="#work">EXPLORE MY WORK ↗</a>
+</div>
+</header>
+
+<section id="work">
+<div class="section-top reveal">
+<div>
+<div class="eyebrow">01 / Selected Projects</div>
+<h2>THE WORK<span class="gold">.</span></h2>
+</div>
+<p class="small">SPORTS / FILM / VISUAL STORYTELLING<br>SELECTED CREATIVE PROJECTS</p>
+</div>
+
+<div class="work-grid">
+<a class="project reveal" href="#contact">
+<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1100&q=85" alt="Football stadium">
+<div class="project-info">
+<div class="eyebrow">01 / Sports Film</div>
+<h3>Matchday Stories <span class="arrow">↗</span></h3>
+<div class="small">Filming · Video Editing</div>
+</div>
+</a>
+
+<a class="project reveal" href="https://github.com/boshradib-95/bundesliga-performance-fatigue-analytics" target="_blank" rel="noopener noreferrer">
+<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85" alt="Football field">
+<div class="project-info">
+<div class="eyebrow">02 / Creative Data</div>
+<h3>Beyond the Game <span class="arrow">↗</span></h3>
+<div class="small">Bundesliga · Visual Storytelling</div>
+</div>
+</a>
+
+<a class="project reveal" href="#about">
+<img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=900&q=85" alt="Tennis court">
+<div class="project-info">
+<div class="eyebrow">03 / Sports Visualization</div>
+<h3>A Tennis Legacy <span class="arrow">↗</span></h3>
+<div class="small">Federer · Data Art</div>
+</div>
+</a>
+</div>
+<p class="small" style="margin-top:20px">Visual placeholders — original photography and films will replace these images.</p>
+</section>
+
+<section id="about" class="about">
+<div class="reveal">
+<div class="eyebrow">02 / The Creator</div>
+<h2>THE EYE<br>BEHIND<br>THE LENS<span class="gold">.</span></h2>
+</div>
+<div class="reveal">
+<p>I'm Boshra Dib, a Berlin-based creative with a passion for photography, filmmaking, design and sports.</p>
+<p>I love turning moments into visual stories — combining an eye for detail, thoughtful editing and a strong connection to the energy of sport.</p>
+<div class="tags">
+<span>Photography</span><span>Videography</span>
+<span>Video Editing</span><span>Visual Design</span>
+<span>Sports Storytelling</span>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact reveal">
+<div class="eyebrow">03 / Get in Touch</div>
+<h2>LET'S CREATE<br><span class="gold">SOMETHING.</span></h2>
+<p class="small">Available for creative opportunities and collaborations.</p>
+<a class="button" href="https://www.linkedin.com/in/boshra-dib95/" target="_blank" rel="noopener noreferrer">CONNECT ON LINKEDIN ↗</a>
+</section>
+
+<footer>
+<span>© 2026 BOSHRA DIB</span>
+<span>VISUAL STORIES · BERLIN</span>
+</footer>
+
+<script>
+const items=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+}
+});
+},{threshold:.08});
+items.forEach(item=>observer.observe(item));
+}else{items.forEach(item=>item.classList.add("visible"));}
+</script>
+</body>
+</html>
